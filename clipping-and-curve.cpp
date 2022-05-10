@@ -14,6 +14,16 @@ public:
 
 };
 
+void PointClipping(HDC hdc, int xPoint, int yPoint, int xc, int yc, int R, COLORREF c)
+{
+	int distance = sqrt((xPoint - xc) * (xPoint - xc) + (yPoint - yc) * (yPoint - yc));
+	if (distance <= R)
+		SetPixel(hdc, xPoint, yPoint, RGB(255, 0, 0));
+	else
+		SetPixel(hdc, xPoint, yPoint, RGB(0, 0, 255));
+}
+
+
 void DrawHermiteCurve(HDC hdc, Point& p1, Point& t1, Point& p2, Point& t2, int xs, int ys, int R, COLORREF c)
 {
 	int a0 = p1.x,
@@ -34,7 +44,7 @@ void DrawHermiteCurve(HDC hdc, Point& p1, Point& t1, Point& p2, Point& t2, int x
 		double x = a0 + a1 * t + a2 * tSquare + a3 * tCube;
 		double y = b0 + b1 * t + b2 * tSquare + b3 * tCube;
 
-		SetPixel(hdc, x, y, RGB(255, 0, 0));
+		PointClipping(hdc, x, y, xs, ys, R, c);
 	}
 }
 
