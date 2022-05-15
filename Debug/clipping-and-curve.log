@@ -1,6 +1,6 @@
 ﻿  clipping-and-curve.cpp
-C:\Users\lenovo\source\repos\clipping-and-curve\clipping-and-curve.cpp(19,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\lenovo\source\repos\clipping-and-curve\clipping-and-curve.cpp(47,25): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\lenovo\source\repos\clipping-and-curve\clipping-and-curve.cpp(47,22): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\lenovo\source\repos\clipping-and-curve\clipping-and-curve.cpp(112,12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\lenovo\source\repos\clipping-and-curve\clipping-and-curve.cpp(14,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\lenovo\source\repos\clipping-and-curve\clipping-and-curve.cpp(42,25): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\lenovo\source\repos\clipping-and-curve\clipping-and-curve.cpp(42,22): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\lenovo\source\repos\clipping-and-curve\clipping-and-curve.cpp(107,12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   clipping-and-curve.vcxproj -> C:\Users\lenovo\source\repos\clipping-and-curve\Debug\clipping-and-curve.exe

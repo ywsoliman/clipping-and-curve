@@ -1,11 +1,6 @@
 #include <Windows.h>
 #include <cmath>
 
-int Round(double x)
-{
-	return (int)(x + 0.5);
-}
-
 class Point {
 
 public:
